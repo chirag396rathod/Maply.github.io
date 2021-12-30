@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/71e909f297.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Maply | one Of the Best List App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="list__container">
+        <div class="header__list">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Maply</span>
+        </div>
+        <div class="list__item workouts">
+          <div class="scroll__window">
+            <form class="form hidden">
+              <div class="form__row">
+                <div class="col">
+                  <div class="tital">
+                    <h4>Type</h4>
+                  </div>
+                  <div class="options">
+                    <select
+                      name="type"
+                      class="input form__input--type"
+                      id="select"
+                    >
+                      <option value="">cycaling</option>
+                      <option value="">Running</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="col">
+                  <div class="tital">
+                    <h4>Distance</h4>
+                  </div>
+                  <div class="options">
+                    <input
+                      type="number"
+                      class="input form__input--distance"
+                      placeholder="km"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="col">
+                  <div class="tital">
+                    <h4>Duration</h4>
+                  </div>
+                  <div class="options">
+                    <input
+                      type="number"
+                      class="input form__input--duration"
+                      placeholder="mini"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="col">
+                  <div class="tital">
+                    <h4>Cadals</h4>
+                  </div>
+                  <div class="options">
+                    <input
+                      type="number"
+                      class="input form__input--cadence"
+                      placeholder="staps"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form__row hidden__input">
+                <div class="col">
+                  <div class="tital">
+                    <h4>Elev Gain</h4>
+                  </div>
+                  <div class="options">
+                    <input
+                      type="number"
+                      class="input form__input--elevation"
+                      placeholder="meters"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <!-- <div class="lable__pre workouts workout--running" data-id="">
+              <div class="head">
+                <h4>Running on Date</h4>
+              </div>
+              <div class="manu__item">
+                <div class="workout__detail">
+                  <span class="workout__icon">🚴‍♀️</span>
+                  <span class="workout__value">27</span>
+                  <span class="workout__unit">km</span>
+                </div>
+                <div class="workout__detail">
+                  <span class="workout__icon">⏱</span>
+                  <span class="workout__value">95</span>
+                  <span class="workout__unit">min</span>
+                </div>
+                <div class="workout__detail">
+                  <span class="workout__icon">⚡️</span>
+                  <span class="workout__value">16</span>
+                  <span class="workout__unit">km/h</span>
+                </div>
+                <div class="workout__detail">
+                  <span class="workout__icon">⛰</span>
+                  <span class="workout__value">223</span>
+                  <span class="workout__unit">m</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <footer class="footer">
+          <p>&copy; All copyright by chirag Rathod 2021</p>
+        </footer>
+      </div>
+      <div class="map__container" id="map"></div>
+    </div>
+    <script defer src="app.js"></script>
+  </body>
+</html>
