@@ -77,7 +77,7 @@ class App {
             if (navigator.geolocation) {
 
                   navigator.geolocation.getCurrentPosition(this._loadmap.bind(this), function () {
-                        onsole.log('Your Location Is Not On!!!');
+                        console.log('Your Location Is Not On!!!');
                   })
 
             }
