@@ -24,13 +24,41 @@
 
     <title>Maply | one Of the Best List App</title>
   </head>
-  <body>
+  <div>
+
+    <!-- Login Form -->
+  <div class="user__form">
+    <div class="user__login__overlay">
+      <div class="form__login">
+        <div class="Form__tital">
+          <h1>Login Now</h1>
+          <p>Welcome I our Maply App</p>
+        </div>
+        <div class="input__container__login">
+          <input type="text" class="input id" placeholder="Enter UserID">
+          <input type="password" class="input password" placeholder="Password">
+        </div>
+        <div class="button__log">
+          <button class="btn login__btn">Login Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Login Form End -->
+
+
+    
+  <div class="contant">
     <div class="container">
       <div class="list__container">
         <div class="header__list">
           <i class="fas fa-map-marker-alt"></i>
           <span>Maply</span>
         </div>
+        <p class="msg"></p>
+        <!-- <div class="log_out">
+          <i class="fas fa-sign-out-alt"></i> <span> Logout</span> 
+        </div> -->
         <div class="list__item workouts">
           <div class="scroll__window">
             <form class="form hidden">
@@ -45,8 +73,8 @@
                       class="input form__input--type"
                       id="select"
                     >
-                      <option value="">cycaling</option>
-                      <option value="">Running</option>
+                    <option value="Running">Running</option>
+                      <option value="cycaling">cycaling</option>
                     </select>
                   </div>
                 </div>
@@ -59,7 +87,7 @@
                   </div>
                   <div class="options">
                     <input
-                      type="number"
+                      type="text"
                       class="input form__input--distance"
                       placeholder="km"
                     />
@@ -74,7 +102,7 @@
                   </div>
                   <div class="options">
                     <input
-                      type="number"
+                      type="text"
                       class="input form__input--duration"
                       placeholder="mini"
                     />
@@ -89,7 +117,7 @@
                   </div>
                   <div class="options">
                     <input
-                      type="number"
+                      type="text"
                       class="input form__input--cadence"
                       placeholder="staps"
                     />
@@ -104,7 +132,7 @@
                   </div>
                   <div class="options">
                     <input
-                      type="number"
+                      type="text"
                       class="input form__input--elevation"
                       placeholder="meters"
                     />
@@ -146,8 +174,10 @@
           <p>&copy; All copyright by chirag Rathod 2021</p>
         </footer>
       </div>
-      <div class="map__container" id="map"></div>
+      <div  class="map__container" id="map"></div>
     </div>
+  </div>
     <script defer src="app.js"></script>
+    <script defer src="user.js"></script>
   </body>
 </html>
